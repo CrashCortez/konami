@@ -1,85 +1,7 @@
 <?xml version="1.0"?>
 <gameList>
 	<game>
-		<path>./audiosettings.rp</path>
-		<name>Audio</name>
-		<desc>Configure audio settings. Choose default of auto, 3.5mm jack, or HDMI. Mixer controls, and apply default settings.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/audiosettings.png</image>
-	</game>
-	<game>
-		<path>./bluetooth.rp</path>
-		<name>Bluetooth</name>
-		<desc>Register and connect to bluetooth devices. Unregister and remove devices, and display registered and connected devices.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/bluetooth.png</image>
-	</game>
-	<game>
-		<path>./configedit.rp</path>
-		<name>Configuration Editor</name>
-		<desc>Change common RetroArch options, and manually edit RetroArch configs, global configs, and non-RetroArch configs.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/configedit.png</image>
-	</game>
-	<game>
-		<path>./filemanager.rp</path>
-		<name>File Manager</name>
-		<desc>Basic ascii file manager for linux allowing you to browse, copy, delete, and move files.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/filemanager.png</image>
-	</game>
-	<game>
-		<path>./retroarch.rp</path>
-		<name>Retroarch</name>
-		<desc>Launches the RetroArch GUI so you can change RetroArch options. Note: Changes will not be saved unless you have enabled the "Save Configuration On Exit" option.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/retroarch.png</image>
-	</game>
-	<game>
-		<path>./retronetplay.rp</path>
-		<name>RetroArch Net Play</name>
-		<desc>Set up RetroArch Netplay options, choose host or client, port, host IP, delay frames, and your nickname.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/retronetplay.png</image>
-	</game>
-	<game>
-		<path>./splashscreen.rp</path>
-		<name>Splash Screens</name>
-		<desc>Enable or disable the splashscreen on RetroPie boot. Choose a splashscreen, download new splashscreens, and return splashscreen to default.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/splashscreen.png</image>
-	</game>
-	<game>
-		<path>./attractmode.sh</path>
-		<name>Switch to Attract Mode</name>
-		<desc>Reboot into the Attract Mode front-end.</desc>
-		<image>./icons/attractmode.png</image>
-		<playcount>2</playcount>
-		<lastplayed>20171206T201236</lastplayed>
-	</game>
-	<game>
-		<path>./runcommand.rp</path>
-		<name>Run Command Configuration</name>
-		<desc>Change what appears on the runcommand screen. Enable or disable the menu, enable or disable box art, and change CPU configuration.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/runcommand.png</image>
-		<playcount>1</playcount>
-		<lastplayed>20171207T151707</lastplayed>
-	</game>
-	<game>
-		<path>./showip.rp</path>
-		<name>Show IP</name>
-		<desc>Displays your current IP address, as well as other information provided by the command, "ip addr show."</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/showip.png</image>
-		<playcount>1</playcount>
-		<lastplayed>20171231T162317</lastplayed>
-	</game>
-	<game>
-		<path>./backgroundmusic.sh</path>
-		<name>Background Music</name>
-		<desc>The mpg123 music script has been installed in this build to play MP3/WAV files during menu navigation in both Emulation Station and Attract Mode.
-
-A special folder in /roms has been created called music.  This folder is used to place your MP3/WAV files into.  Once done, restart the system and they will begin automatically playing.
-
-Once you launch a game, the music will stop.  Upon exiting out of a game, the music will begin playing again.</desc>
-		<image>./icons/backgroundmusic.png</image>
-		<playcount>3</playcount>
-		<lastplayed>20180108T142056</lastplayed>
-	</game>
-	<game>
-		<path>./escollections.sh</path>
+		<path>./konami/utilites/escollections.sh</path>
 		<name>ES Collections</name>
 		<desc>This script will dynamically create the custom collections game list file.
 
@@ -104,14 +26,7 @@ Enable the new collection and exit back out to the main menu.  The new collectio
 		<lastplayed>20180108T142118</lastplayed>
 	</game>
 	<game>
-		<path>./systeminfo.sh</path>
-		<name>systeminfo</name>
-		<image>./icons/systeminfo.png</image>
-		<playcount>3</playcount>
-		<lastplayed>20180108T142231</lastplayed>
-	</game>
-	<game>
-		<path>./esgamelist.sh</path>
+		<path>./konami/utilites/esgamelist.sh</path>
 		<name>ES Gamelist Utility</name>
 		<desc>This script is for installing premade, prescraped Emulation Station gamelist.xml files.  The script also provides a cleanup utility to audit existing gamelist.xml files against existing rom files to end up with a gamelist.xml file only containing entries for matching rom files.
 
@@ -128,7 +43,7 @@ The premade gamelist files contain multiple entries per game to account for all 
 		<lastplayed>20180123T120945</lastplayed>
 	</game>
 	<game>
-		<path>./removemedia.sh</path>
+		<path>./konami/utilites/removemedia.sh</path>
 		<name>Media Removal Utility</name>
 		<desc>This utility will remove any media files (boxart, cartart, snap, wheel) that exists that does not hvae a matching rom file.
 
@@ -145,7 +60,7 @@ You can select individual systems to remove excess media files.</desc>
 		<lastplayed>20180123T121507</lastplayed>
 	</game>
 	<game>
-		<path>./bezels.sh</path>
+		<path>./konami/utilites/bezels.sh</path>
 		<name>Retroarch Bezels</name>
 		<desc>This script will enable or disable the use of bezel overlays for Retroarch based emulators.
 
@@ -162,15 +77,7 @@ This script will update the retroarch config files to use the designated named b
 		<lastplayed>20180203T162331</lastplayed>
 	</game>
 	<game>
-		<path>./rpsetup.rp</path>
-		<name>RetroPie Setup</name>
-		<desc>Install RetroPie from binary or source, install experimental packages, additional drivers, edit samba shares, custom scraper, as well as other RetroPie-related configurations.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/rpsetup.png</image>
-		<playcount>5</playcount>
-		<lastplayed>20180203T144839</lastplayed>
-	</game>
-	<game>
-		<path>./gpioshutdown.sh</path>
+		<path>./konami/utilites/gpioshutdown.sh</path>
 		<name>GPIO Shutdown Utility</name>
 		<desc>The GPIO shutdown script has already been installed on this base image.
 
@@ -182,27 +89,7 @@ One press will shutdown and one press will power back on.</desc>
 		<image>/home/pi/RetroPie/retropiemenu/icons/gpioshutdown.png</image>
 	</game>
 	<game>
-		<path>./genesis.sh</path>
-		<name>Switch Genesis-Megadrive</name>
-		<desc>This script will switch between the Sega Genesis and the Sega Megadrive themes to show in the main menu.
-
-You will need to restart Emulation Station after making the change.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/genesis.png</image>
-		<playcount>1</playcount>
-		<lastplayed>20180203T144839</lastplayed>
-	</game>
-	<game>
-		<path>./reference.sh</path>
-		<name>RetroPie Reference</name>
-		<desc>This is a quick reference utility for RetroPie including Emulation Station, Attract Mode, RetroArch, and emulator ROM and BIOS information.
-    
-You can quickly see where ROM and BIOS files are located, their approved filename extensions, etc.
-
-For the most up-to-date information, visit the official RetroPie wiki page.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/reference.png</image>
-	</game>
-	<game>
-		<path>./jukebox.sh</path>
+		<path>./konami/utilites/jukebox.sh</path>
 		<name>RetroPie Jukebox</name>
 		<desc>Turn your RetroPie into a music jukebox.
     
@@ -219,22 +106,14 @@ You can manually configure your controllers by adjusting the config file located
 		<image>/home/pi/RetroPie/retropiemenu/icons/jukebox.png</image>
 	</game>
 	<game>
-		<path>./jukeboxconfigure.sh</path>
+		<path>./konami/utilites/jukeboxconfigure.sh</path>
 		<name>RetroPie Jukebox Configuration</name>
 		<desc>Configuration utility for the Fruitbox jukebox.
     </desc>
 		<image>/home/pi/RetroPie/retropiemenu/icons/jukeboxconfigure.png</image>
 	</game>
 	<game>
-		<path>./wifi.sh</path>
-		<name>WiFi</name>
-		<desc>Connect to or disconnect from a wifi network and configure wifi settings.</desc>
-		<image>/home/pi/RetroPie/retropiemenu/icons/wifi.png</image>
-		<playcount>2</playcount>
-		<lastplayed>20180825T032701</lastplayed>
-	</game>
-	<game>
-		<path>./armbian-config.sh</path>
+		<path>./konami/utilites/armbian-config.sh</path>
 		<name>Armbian-Config</name>
 		<desc>Change user password, boot options, internationalization, SSH and more.</desc>
 		<image>./icons/raspiconfig.png</image>
@@ -244,7 +123,7 @@ You can manually configure your controllers by adjusting the config file located
 	<folder>
 		<path>./konami</path>
 		<name>Konami Code</name>
-		<desc>Konami Code by Mr. and Mrs. Smith</desc>
+		<desc>Konami Code</desc>
 		<image>./icons/konami.jpg</image>
 		<rating>0</rating>
 		<releasedate>20180910T000000</releasedate>
@@ -257,7 +136,7 @@ You can manually configure your controllers by adjusting the config file located
 	<folder>
 		<path>./konami/full</path>
 		<name>Full Sets</name>
-		<desc>Full Sets by Mr. and Mrs. Smith</desc>
+		<desc>Full Sets</desc>
 		<image>./icons/full.jpg</image>
 		<rating>0</rating>
 		<releasedate>20180910T000000</releasedate>
@@ -270,7 +149,20 @@ You can manually configure your controllers by adjusting the config file located
 	<folder>
 		<path>./konami/boxart</path>
 		<name>Boxart Sets</name>
-		<desc>Sets with Boxart by Mr. and Mrs. Smith</desc>
+		<desc>Boxart</desc>
+		<image>./icons/boxart.jpg</image>
+		<rating>0</rating>
+		<releasedate>20180910T000000</releasedate>
+		<developer />
+		<publisher />
+		<genre />
+		<playcount />
+		<lastplayed />
+	</folder>
+	<folder>
+		<path>./konami/hacks</path>
+		<name>Hacks</name>
+		<desc>Hacks with Boxart</desc>
 		<image>./icons/boxart.jpg</image>
 		<rating>0</rating>
 		<releasedate>20180910T000000</releasedate>
@@ -301,7 +193,7 @@ Most BIOS implementations are specifically designed to work with a particular co
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/atari2600z.sh</path>
+		<path>./konami/full/atari2600.sh</path>
 		<name>atari 2600</name>
 		<desc>Atari 2600 rom set with box art. 
 
@@ -320,7 +212,7 @@ For five years, from 1977 until late 1982, the system was officially sold as the
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/atari5200z.sh</path>
+		<path>./konami/full/atari5200.sh</path>
 		<name>atari 5200</name>
 		<desc>Atari 5200 rom set with box art. 
 
@@ -339,7 +231,7 @@ The 5200's internal hardware is almost identical that of Atari's 8-bit computers
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/atari7800z.sh</path>
+		<path>./konami/full/atari7800.sh</path>
 		<name>atari 7800</name>
 		<desc>Atari 7800 rom set with box art. 
 
@@ -360,7 +252,7 @@ The 1986 launch is sometimes referred to as a "re-release" or "relaunch" because
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/atarilynxz.sh</path>
+		<path>./konami/full/atarilynx.sh</path>
 		<name>Atari Lynx</name>
 		<desc>Atari Lynx rom set with box art. 
 
@@ -377,7 +269,7 @@ The Atari Lynx is a 16-bit handheld game console that was released by Atari Corp
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/colecoz.sh</path>
+		<path>./konami/full/coleco.sh</path>
 		<name>ColecoVision</name>
 		<desc>ColecoVision rom set with box art. 
 
@@ -398,7 +290,7 @@ Coleco withdrew from the video game market in 1985, and ColecoVision was discont
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/fdsz.sh</path>
+		<path>./konami/full/fds.sh</path>
 		<name>Famicom Disk System</name>
 		<desc>Famicom Disk System rom set with box art. 
 
@@ -415,7 +307,7 @@ Famicom Disk System device is connected to the Famicom deck by plugging a specia
 		<lastplayed>20170627T214550</lastplayed>
 	</game>
 	<game>
-		<path>./konami/boxart/gamegearz.sh</path>
+		<path>./konami/full/gamegear.sh</path>
 		<name>SEGA Game Gear</name>
 		<desc>SEGA Master System rom set with box art. 
 
@@ -436,7 +328,7 @@ Reception of the Game Gear was mixed, with praise for its full-color backlit scr
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/gbcz.sh</path>
+		<path>./konami/full/gbc.sh</path>
 		<name>Game Boy Color</name>
 		<desc>Game Boy Color rom set with box art. 
 
@@ -457,7 +349,7 @@ The Game Boy Color's primary competitors were the much more advanced Neo Geo Poc
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/gbz.sh</path>
+		<path>./konami/full/gb.sh</path>
 		<name>Game Boy</name>
 		<desc>Game Boy rom set with box art. 
 
@@ -476,7 +368,7 @@ During its early lifetime, the Game Boy mainly competed with Sega's Game Gear, A
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/intellivisionz.sh</path>
+		<path>./konami/full/intellivision.sh</path>
 		<name>Intellivision</name>
 		<desc>Intellivision rom set box art. 
 
@@ -495,7 +387,7 @@ In 2009, video game website IGN named the Intellivision the No. 14 greatest vide
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/mastersystemz.sh</path>
+		<path>./konami/full/mastersystem.sh</path>
 		<name>SEGA Master System</name>
 		<desc>SEGA Master System rom set with box art. 
 
@@ -514,7 +406,7 @@ Succeeding the SG-1000, the Master System was released as a direct competitor to
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/megadrivez.sh</path>
+		<path>./konami/full/megadrive.sh</path>
 		<name>SEGA MegaDrive/Genesis</name>
 		<desc>SEGA MegaDrive/Genesis rom set with box art. 
 
@@ -533,7 +425,7 @@ Designed by an R&amp;D team supervised by Hideki Sato and Masami Ishikawa, the h
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/megadrive-japanz.sh</path>
+		<path>./konami/full/megadrive-japan.sh</path>
 		<name>Sega Megadrive Japan</name>
 		<desc>Sega Megadrive Japan rom set with box art. 
 
@@ -554,7 +446,7 @@ In Japan, the Mega Drive did not fare well against its two main competitors, Nin
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/nesz.sh</path>
+		<path>./konami/full/nes.sh</path>
 		<name>Nintendo Entertainment System</name>
 		<desc>NES rom set with box art. 
 
@@ -577,7 +469,7 @@ In 2009, the Nintendo Entertainment System was named the single greatest video g
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/ngpcz.sh</path>
+		<path>./konami/full/ngpc.sh</path>
 		<name>Neo Geo Pocket Color</name>
 		<desc>Neo Geo Pocket Color rom set with box art. 
 
@@ -596,7 +488,7 @@ After a good sales start in both the U.S. and Japan with 14 launch titles (a rec
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/ngpz.sh</path>
+		<path>./konami/full/ngp.sh</path>
 		<name>Neo Geo Pocket</name>
 		<desc>Neo Geo Pocket rom set with box art. 
 
@@ -615,7 +507,7 @@ The Neo Geo Pocket is considered to be an unsuccessful console. Lower than expec
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/sega32xz.sh</path>
+		<path>./konami/full/sega32x.sh</path>
 		<name>SEGA 32X</name>
 		<desc>SEGA 32X rom set with box art. 
 
@@ -636,7 +528,7 @@ The 32X is considered a commercial failure. Reception after the add-on's unveili
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/sfcz.sh</path>
+		<path>./konami/full/sfc.sh</path>
 		<name>Super Famicom</name>
 		<desc>Super Famicom.
 
@@ -653,7 +545,7 @@ The Super Nintendo Entertainment System, and commonly shortened to Super Nintend
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/sgfxz.sh</path>
+		<path>./konami/full/sgfx.sh</path>
 		<name>Super Grafx</name>
 		<desc>Super Grafx rom set with box art. 
 
@@ -674,7 +566,7 @@ Only seven games were produced which took advantage of the improved SuperGrafx h
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/snesz.sh</path>
+		<path>./konami/full/snes.sh</path>
 		<name>Super Nintendo</name>
 		<desc>Super Nintendo rom set with box art. 
 
@@ -693,7 +585,7 @@ The SNES was a global success, becoming the best-selling console of the 16-bit e
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/tg16z.sh</path>
+		<path>./konami/full/tg16.sh</path>
 		<name>TurboGrafx 16</name>
 		<desc>TurboGrafx 16 rom set with box art. 
 
@@ -714,7 +606,7 @@ The TurboGrafx-16 failed to break into the North American market and sold poorly
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/zero/vectrexz.sh</path>
+		<path>./konami/full/vectrex.sh</path>
 		<name>Vectrex</name>
 		<desc>Vectrex rom set with box art. 
 
@@ -733,7 +625,7 @@ Unlike other non-portable video game consoles, which connected to televisions an
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/videopac2z.sh</path>
+		<path>./konami/full/videopac2.sh</path>
 		<name>Magnavox Odyssey 2 / Videopac 2</name>
 		<desc>Magnavox Odyssey 2 / Videopac 2 rom set. 
 
@@ -754,7 +646,7 @@ In 2009, the video game website IGN named the Odyssey2 the 21st greatest video g
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/virtualboyz.sh</path>
+		<path>./konami/full/virtualboy.sh</path>
 		<name>Virtual Boy</name>
 		<desc>Virtual Boy rom set with box art. 
 
@@ -773,7 +665,7 @@ Development of the Virtual Boy lasted four years, and began originally under the
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/wonderswanz.sh</path>
+		<path>./konami/full/wonderswan.sh</path>
 		<name>WonderSwan</name>
 		<desc>WonderSwan rom set with box art. 
 
@@ -794,7 +686,7 @@ Overall, the WonderSwan in all its variations combined to sell an estimated 3.5 
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/wonderswancolorz.sh</path>
+		<path>./konami/full/wonderswancolor.sh</path>
 		<name>WonderSwan Color</name>
 		<desc>WonderSwan Color rom set with box art.
 
@@ -811,7 +703,7 @@ A redesign of the WonderSwan Color, titled SwanCrystal, was released in Japan on
 		<lastplayed />
 	</game>
 	<game>
-		<path>./konami/boxart/vectrexz.sh</path>
+		<path>./konami/full/vectrex.sh</path>
 		<name>Vectrex</name>
 		<desc>Vectrex rom set with box art. 
 
@@ -1991,27 +1883,5 @@ A redesign of the WonderSwan Color, titled SwanCrystal, was released in Japan on
 		<genre>home gaming system</genre>
 		<playcount />
 		<lastplayed />
-	</game>
-	<game>
-		<path>./esthemes.rp</path>
-		<name>ES Themes</name>
-		<desc>Install, uninstall, or update EmulationStation themes. Most themes can be previewed at https://github.com/retropie/ RetroPie-Setup/wiki/themes.</desc>
-		<image>./icons/esthemes.png</image>
-		<playcount>6</playcount>
-		<lastplayed>20180908T120405</lastplayed>
-	</game>
-	<game>
-		<path>./launchingscreens.sh</path>
-		<name>Launching Screens</name>
-		<desc>This script will enable or disable the use of launching screens.
-
-Launching screensets are located here:
-/home/pi/RetroPie/LaunchingScreens
-
-Each set of launching screens you have located there must be in their own parent folder, with the individual emulator system folders containing the launching.png files underneath.
-</desc>
-		<image>./icons/launchingscreens.png</image>
-		<playcount>27</playcount>
-		<lastplayed>20180908T120502</lastplayed>
 	</game>
 </gameList>

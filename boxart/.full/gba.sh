@@ -4,6 +4,7 @@ mkdir test
 cd test
 wget -c https://archive.org/download/mb_unified_rompacks_202010/gba_unified_rompack.7z -q --show-progress
 7z x -y -aoa /home/pi/test/gba_unified_rompack.7z
+sudo rm -R /home/pi/RetroPie/roms/gba
 sudo mv gba /home/pi/RetroPie/roms
 sudo rm "gba_unified_rompack.7z"
 cd ..

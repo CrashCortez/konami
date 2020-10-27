@@ -8,6 +8,7 @@ sudo mv amstradcpc /home/pi/RetroPie/roms
 sudo rm "amstradcpc_unified_rompack.7z"
 cd ..
 sudo rm -R test
-touch /tmp/es-restart && kill -15 $(pidof emulationstation)
+touch /tmp/es-restart
+kill -15 $(pidof emulationstation)
 
 

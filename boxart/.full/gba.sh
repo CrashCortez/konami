@@ -10,5 +10,3 @@ sudo rm "gba_unified_rompack.7z"
 cd ..
 sudo rm -R test
 touch /tmp/es-restart && kill -15 $(pidof emulationstation)
-
-

@@ -1,5 +1,5 @@
 #################################################################################################################
-# This script assumes that you have made the Two folders in ports, that you own the PC game files, and that you  
+# This script assumes that you have the desktop installed, made the Two folders in ports, that you own the PC game files, and that you  
 # have placed them in /home/pi/RetroPie/roms/ports/GTA3/GrandTheftAuto3.
 # 
 # If you need to make the folders you can use the following commands with out the #

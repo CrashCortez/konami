@@ -76,11 +76,13 @@ cp -r gamefiles/* ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3/
 ##########################
 
 cd ~/RetroPie/roms/ports
-touch re3.sh
 
-sed '1 i #!/bin/bash' re3.sh
-sed '2 i cd ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3' re3.sh
-sed '3 i startx ./re3' re3.sh
+
+#touch re3.sh
+
+#sed '1 i #!/bin/bash' re3.sh
+#sed '2 i cd ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3' re3.sh
+#sed '3 i startx ./re3' re3.sh
 
 #sed -i  '#!/bin/bash
 #cd ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3
@@ -91,6 +93,10 @@ R
 ##########################
 # Edit the re3.ini file
 ##########################
+
+
+cd ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3
+wget https://raw.githubusercontent.com/CrashCortez/konami/main/re3.ini
 
 
 # Find the [VideoMode] and change it like so

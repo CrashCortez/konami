@@ -31,8 +31,8 @@ cd ~/RetroPie/roms/ports/GTA3
 
 git clone https://github.com/dmitry64/re3.git
 
-sudo apt install libopenal-dev
-sudo apt install libglew-dev
+sudo apt install -y libopenal-dev
+sudo apt install -y libglew-dev
 
 wget https://github.com/glfw/glfw/archive/3.3.2.tar.gz
 tar xvf 3.3.2.tar.gz 
@@ -43,8 +43,8 @@ sudo make install
 
 cd ~/RetroPie/roms/ports/GTA3
 
-sudo apt install libsndfile1-dev
-sudo apt install libmpg123-dev
+sudo apt install -y libsndfile1-dev
+sudo apt install -y libmpg123-dev
 
 ##########################
 # Building and Installing Re3

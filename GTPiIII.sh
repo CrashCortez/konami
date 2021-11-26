@@ -87,7 +87,7 @@ sed '3 i startx ./re3' re3.sh
 #startx ./re3 re3.sh'
 
 chmod u+x re3.sh
-
+R
 ##########################
 # Edit the re3.ini file
 ##########################

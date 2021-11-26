@@ -2,12 +2,12 @@
 # This script assumes that you have made the Two folders in ports, that you own the PC game files, and that you  
 # have placed them in /home/pi/RetroPie/roms/ports/GTA3/GrandTheftAuto3.
 # 
-# If you need to make the folders you can use the following commands
+# If you need to make the folders you can use the following commands with out the #
 #
 # mkdir -p ~/RetroPie/roms/ports/GTA3
 # mkdir -p ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3
 # 
-# If you need the game files they can be perchaced from Steam and GoG
+# If you need the game files they can be purchased from Steam and GoG
 #
 # Get the PC Game Files and put them in /home/pi/RetroPie/roms/ports/GTA3/GrandTheftAuto3
 #
@@ -84,7 +84,7 @@ sed '3 i startx ./re3' re3.sh
 
 #sed -i  '#!/bin/bash
 #cd ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3
-#startx ./re3' re3.sh
+#startx ./re3 re3.sh'
 
 chmod u+x re3.sh
 
@@ -92,27 +92,26 @@ chmod u+x re3.sh
 # Edit the re3.ini file
 ##########################
 
-print
-ptint Find the [VideoMode] and change it like so
-print 
-print [VideoMode]
-print Depth = 32
-print Height = 480
-print Width = 640
-print Windowed = 0
-print
-print
+
+# Find the [VideoMode] and change it like so
+
+#[VideoMode]
+#Depth = 32
+#Height = 480
+#Width = 640
+#Windowed = 0
 
 wait 15
 
-nano ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3/re3.ini
+# Uses the following to edit the re3.ini file with the above without the #
+# nano ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3/re3.ini
 
 ##########################
 # Test
 ##########################
 
-cd ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3
-startx ./re3
+#cd ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3
+#startx ./re3
 
 ##########################
 # If desktop is not installed on your retropie build used instaill that folloing

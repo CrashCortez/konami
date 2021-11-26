@@ -99,6 +99,7 @@ wget https://raw.githubusercontent.com/CrashCortez/konami/main/re3.ini
 #Windowed = 0
 
 wait 15
+sudo reboot
 
 # Uses the following to edit the re3.ini file with the above without the #
 # nano ~/RetroPie/roms/ports/GTA3/GrandTheftAuto3/re3.ini

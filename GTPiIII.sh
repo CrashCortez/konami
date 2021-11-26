@@ -80,7 +80,7 @@ cd ~/RetroPie/roms/ports
 wget https://raw.githubusercontent.com/CrashCortez/konami/main/gta3.sh
 
 chmod u+x re3.sh
-R
+
 ##########################
 # Edit the re3.ini file
 ##########################
